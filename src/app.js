@@ -17,7 +17,7 @@ app.use(express.static(static_path));
 
 //Routing
 app.get("/", (req, res)=>{
-    res.render('')
+    res.render('index')
 })
 
 app.get("/about", (req, res)=>{
@@ -25,11 +25,11 @@ app.get("/about", (req, res)=>{
 })
 
 
-app.get("*", (req, res) =>{
-    res.render("404error", {
-        errorMsg : "Opps! page notfound"
-    })
-})
+// app.get("*", (req, res) =>{
+//     res.render("404error", {
+//         errorMsg : "Opps! page notfound"
+//     })
+// })
 
 app.listen(port, ()=>{
     console.log(`Server is live on port ${port}`);
