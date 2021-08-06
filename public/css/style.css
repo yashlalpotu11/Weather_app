@@ -43,10 +43,11 @@ body {
 
 .navbar a {
   color: #fff;
-  /* font-size: 1.8rem; */
+  font-size: 2.2rem;
 }
-.navbar a .brand{
-    font-size: 3.8rem;
+
+.nav-link{
+    font-size: 2.2rem;
 }
 
 .navbar a:hover {
@@ -128,6 +129,10 @@ body {
 
 .main_header_right figure img {
   filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+  /* width: 100%;
+  height: 70%; */
+  /* padding: -20px; */
+  /* margin-bottom: -20px; */
 }
 
 
@@ -213,7 +218,7 @@ body {
     color: #bfc1c8;
     font-weight: 300;
     padding: 2rem 0;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .main_layer .middle_layer{
@@ -233,7 +238,7 @@ body {
 }
 
 sup{
-    font-size: 3rem;
+    font-size: 5rem;
     margin-top: -2rem;
 }
 
@@ -265,7 +270,7 @@ footer p{
 
   .main_header_right {
     height: auto;
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   .temp_form {

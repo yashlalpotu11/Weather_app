@@ -11,7 +11,7 @@ const getInfo = async(e)=>{
     let cityVal = cityName.value;
 
     if(cityVal === ""){
-        city_name.innerText = `Plz write name of city before search`;
+        city_name.innerText = `Plz write proper name of city before search`;
         dataHide.classList.add('data_hide');
     }
     else{
@@ -27,13 +27,13 @@ const getInfo = async(e)=>{
             const tempMood = arrData[0].weather[0].main;
 
             //condition to check sunny or cloudy
-            if(tempMood == 'Clear'){
+            if(tempMood === "Clear"){
                 temp_status.innerHTML = "<i class='fas fa-sun' style='color: #eccc68;'></i>";
             }
-            else if(tempMood == 'Clouds'){
+            else if(tempMood === "Clouds"){
                 temp_status.innerHTML = "<i class='fas fa-cloud' style='color: #f1f2f6;'></i>";
             }
-            else if(tempMood = 'Rain'){
+            else if(tempMood === "Rain"){
                 temp_status.innerHTML = "<i class='fas fa-cloud-rain' style='color: #a4b0be;'></i>";
             }
             else{
@@ -42,7 +42,7 @@ const getInfo = async(e)=>{
             dataHide.classList.remove('data_hide');
         }
         catch{
-            city_name.innerHTML = `Plz write name of city before search`;
+            city_name.innerHTML = `Plz write proper name of city before search`;
         }
     }
 }
