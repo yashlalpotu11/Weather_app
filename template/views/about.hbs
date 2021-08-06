@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     {{>links}}
-</head>
-<body>
+  </head>
+  <body>
+
     {{>navbar}}
 
-    <!--Main header-->
+    <!-- main_header -->
+
     <div class="container-fluid main_header">
-        <div class="row">
-            <div class="col-md-10 col-12 mx-auto">
-                <div class="row">
-                    <div class="col-md-6 col-12 main_header_right ">
-                        <figure>
-                            <img src="images/bg1.png" alt="xyz">
-                        </figure>
-                    </div>
-                    <div class="col-md-6 col-12 main_header_left">
-                        <p>Welcome to weather app</p>
-                        <h1>I am <span class="txt_clr">Mern Stack Developer,</span>and Competitive Programmer</h1>
-                        <a href="http://www.linkedin.com/in/" target="_blank"><button>Go to linked profile</button></a>
-                    </div>
-                </div>
+      <div ="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!-- left side div -->
+            <div class="col-md-6 col-12 main_header_right align-items-center">
+                <figure>
+                    <img src="images/bg1.png" alt="image" class="img-fluid">
+                </figure>
             </div>
+            <div class="col-md-6 col-12 main_header_left">
+              <p>Welcome to weather app</p>
+              <h1>
+                I am a <span class="txt_clr"> Mern Stack Developer, </span> Designer and programmer.
+              </h1>
+              <a href="https://www.linkedin.com/in/" target="_blank"><button>Go to linkedin profile</button></a>
+            </div>
+            <!-- right side div -->
+            
+          </div>
         </div>
+      </div>
     </div>
-</body>
+
+    <!-- footer code -->
+   {{>footer}}
+  </body>
 </html>
