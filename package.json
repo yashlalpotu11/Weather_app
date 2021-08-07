@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/yashlalpotu11/Weather_app#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.2"
+    "hbs": "^4.1.2",
+    "serverless-http": "^2.7.0"
   }
 }

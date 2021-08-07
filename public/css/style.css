@@ -52,7 +52,6 @@ body {
 
 .navbar a:hover {
   color: var(--main-color);
-  font-size: ;
 }
 
 .navbar li {
@@ -261,6 +260,13 @@ footer p{
     color: #fff;
     font-size: 1.4rem;
 }
+
+/* Error page */
+.main_header_left .errimg img {
+  width: 60rem;
+  height: 30rem;
+}
+
 
 /* Responsive code */
 @media (max-width: 768px) {

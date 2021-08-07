@@ -36,13 +36,19 @@ const getInfo = async(e)=>{
             else if(tempMood === "Rain"){
                 temp_status.innerHTML = "<i class='fas fa-cloud-rain' style='color: #a4b0be;'></i>";
             }
+            else if(tempMood === "Haze"){
+                temp_status.innerHTML = "<i class='fas fa-smog' style='color: #f1f2f6;'></i>";
+            }
             else{
-                temp_status.innerHTML = "<i class='fas fa-sun' style='color: #eccc68;'></i>";
+                temp_status.innerHTML = "<i class='fas fa-cloud-sun' style='color: #eccc68;'></i>";
             }
             dataHide.classList.remove('data_hide');
         }
         catch{
             city_name.innerHTML = `Plz write proper name of city before search`;
+            dataHide.classList.add('data_hide');
+            alert(`Weather for ${cityVal} not found `);
+            
         }
     }
 }

@@ -1,8 +1,13 @@
+'use strict';
+
 const express = require('express');
 const path = require('path');
 const app = express();
 const hbs = require('hbs');
 const port = process.env.PORT || 3002;
+
+// const serverless = require('serverless-http');
+// const router = express.Router();
 
 //public static path
 const static_path = path.join(__dirname, "../public");
@@ -28,11 +33,14 @@ app.get("/weather", (req, res)=>{
     res.render('weather')
 })
 
-// app.get("*", (req, res) =>{
-//     res.render("404error", {
-//         errorMsg : "Opps! page notfound"
-//     })
-// })
+app.get("*", (req, res) =>{
+    res.render("error", {
+        errorMsg : "Opps! page not found"
+    })
+})
+
+// module.exports = app;
+// module.exports.handler = serverless(app);
 
 app.listen(port, ()=>{
     console.log(`Server is live on port ${port}`);
