@@ -52,6 +52,7 @@ body {
 
 .navbar a:hover {
   color: var(--main-color);
+  font-size: ;
 }
 
 .navbar li {
@@ -59,12 +60,12 @@ body {
 }
 
 .navbar-toggler {
-  background-color: #718093;
+    background-color: #718093;
 }
 
-.fa-snowflake {
-  transition: all linear;
-  animation: rot 2s linear infinite;
+.fa-cloud-sun-rain {
+  /* transition: all linear;
+  animation: rot 2s linear infinite; */
   color: var(--main-color);
 }
 
