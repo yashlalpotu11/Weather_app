@@ -39,9 +39,6 @@ app.get("*", (req, res) =>{
     })
 })
 
-// module.exports = app;
-// module.exports.handler = serverless(app);
-
 app.listen(port, ()=>{
     console.log(`Server is live on port ${port}`);
 })
