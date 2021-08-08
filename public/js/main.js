@@ -48,7 +48,7 @@ const getInfo = async(e)=>{
             city_name.innerHTML = `Plz write proper name of city before search`;
             dataHide.classList.add('data_hide');
             console.log(e);
-            // alert(`Weather for ${cityVal} not found `);
+            alert(`Weather for ${cityVal} not found `);
             
         }
     }
